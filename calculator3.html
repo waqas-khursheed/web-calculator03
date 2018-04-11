@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<center>
+		
+
+<h1>
+	
+	<br>
+   CASIO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="aa">fx=260ii</span> <br>
+	<span class="for"><input type="text" class="screen" name="input_box" placeholder="00000000000000000000000000"></span>
+  <br>'CalCulaTor'<br>'Waqas Khursheed'<br>
+   <span class="form"><input " type="button" class="log" name="buttonM+" value=""></span>
+	vhy</h1>  
+	 <span class="form"><input onclick="ButtonClick('ON/C')" type="button" class="on" name="button0n/c" value="ON/C"/></span>  
+   <span class="form"><input onclick="" type="button" class="a" name="buttonMRC" value="MRC"/></span>
+   <span class="form"><input onclick="" type="button" class="a" name="buttonM+" value="M+"/></span>
+   <span class="form"><input onclick="" type="button" class="a" name="buttonMRC" value="M-"/></span>
+     <span class="form"><input onclick="" type="button" class="off" name="buttonOFF" value="OFF"/></span> 
+   <br><br>
+   <span class="form"><input onclick="" type="button" class="mbutton" name="button+/-" value="+/-"/></span>
+
+
+   <span class="form"><input onclick="ButtonClick(7)" type="button" class="mybutton" name="button7" value="7"/></span>
+   <span class="form"><input onclick="ButtonClick(8)" type="button"  class="mybutton" name="button8" value="8"/></span>
+   <span class="form"><input onclick="ButtonClick(9)" type="button" class="mybutton" name="button9" value="9"/></span>
+   <span class="form"><input onclick="ButtonClick('/')" type="button" class="mbutton" name="button/" value="/"/></span>
+   <br><br>
+   <span class="form"><input onclick="" type="button" class="mbutton" name="button%" value="%"/></span>
+   <span class="form"><input onclick="ButtonClick(4)" type="button" class="mybutton" name="button4" value="4"/></span>
+   <span class="form"><input onclick="ButtonClick(5)" type="button" class="mybutton" name="button5" value="5"/></span>
+   <span class="form"><input onclick="ButtonClick(6)" type="button" class="mybutton" name="button6" value="6"/></span>
+   <span class="form"><input onclick="ButtonClick('x')" type="button" class="mbutton" name="button*" value="x"/></span>
+   <br><br>
+   <span class=""><input onclick="" type="button" class="mbutton" name="button1/x" value="1/x"/></span>
+   <span class="form"><input onclick="ButtonClick(1)" type="button" class="mybutton" name="button1" value="1"/></span>
+   <span class="form"><input onclick="ButtonClick(2)" type="button" class="mybutton" name="button2" value="2"/></span>
+   <span class="form"><input onclick="ButtonClick(3)" type="button" class="mybutton" name="button3" value="3"/></span>
+   <span class="form"><input onclick="ButtonClick('-')" type="button" class="mbutton" name="button-" value="-"/></span>
+    <br><br>
+    <span class="form"><input onclick="" type="button" class="mbutton" name="buttonCE" value="CE"/></span>
+   <span class="form"><input onclick="ButtonClick(0)" type="button" class="mybutton" name="button0" value="0"/></span>
+   <span class="form"><input onclick="ButtonClick('.')" type="button" class="mbutton" name="button." value="."/></span>
+   <span class="form"><input onclick="ButtonClick('=')" type="button" class="mbutton" name="button=" value="="/></span>
+   <span class="form"><input onclick="ButtonClick('+')" type="button" class="mbutton" name="button+" value="+"/></span>
+   <br><br>
+      <span class="title">STANDARD</span>
+	
+</h1>	
+ 	</center>
+
+</body>
+
+<script type="text/javascript">
+
+	Num1 = 0;
+	Result = 0;
+	Operator = "";
+
+	isDotUsed = false;
+
+   function ButtonClick(x){
+
+   	var screen =document.querySelector('.screen');
+   	
+      if(x == '='){
+   	if(Operator ==!""){
+
+   		}else if(Operator=='+'){
+   			Result = +screen.value + +Num1;
+   			screen.value = Result;
+   		
+         }else if(Operator == '-'){
+   			Result = +Num1 - +screen.value;
+   			screen.value = Result;
+   		
+         }else if(Operator == 'x'){
+   			Result = +Num1 * +screen.value;
+   			screen.value = Result;
+
+   		}else if(Operator== '/'){
+   			Result = +Num1 / +screen.value;
+   			screen.value = Result;
+   		}
+   	
+
+   	}else if(x == '/'){
+   		Num1 = screen.value;
+   		Operator = "/";
+   		screen.value = "";
+
+   	}else if(x == 'x'){
+   		Num1 = screen.value;
+   		Operator = "x";
+   		screen.value = "";
+
+   	}else if(x == '-'){
+   		Num1 = screen.value;
+   		Operator = "-";
+   		screen.value = "";
+
+   	}else if (x == '+'){
+   		Num1 = screen.value;
+   		Operator = "+";
+   		screen.value = "";
+
+   	}else if (x == 'ON/C'){
+   		screen.value = "";
+
+	Num1 = 0;
+	Result = 0;
+	Operator = "";
+
+   	}else if (x == ".") {
+   		if (!isDotUsed) {
+   			isDotUsed= true;
+   			screen.value = screen.value + x;
+   		}
+
+   	}else{
+
+   	screen.value = screen.value + x;
+   }
+}
+</script>
+</html>

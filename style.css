@@ -1,0 +1,151 @@
+body{
+	background: linear-gradient(to right, black, black);
+  
+}
+
+.log{
+    background: linear-gradient(to right, rgb(30,30,30), rgb(40,40,40));
+  height: 430px;
+  width: 375px;
+  color: rgb(176,176,176);
+   border-bottom-color:rgb(43,43,43);
+    border-left-color: rgb(43,43,43);
+    border-right-color: rgb(43,43,43);
+    border-top-color: rgb(100,100,100);
+     border-top-width: 0px;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+    border-right-width: 5px;
+     border-bottom-right-radius:30px;   
+     border-bottom-left-radius:30px;   
+      border-top-right-radius: px;
+      border-bottom-style:double;
+       border-right-style:double;
+        border-left-style:double;
+
+}
+
+
+h1{
+    background: linear-gradient(to right, rgb(80,80,80), rgb(70,70,70));
+    height:230px;
+    border-radius: px;
+    width: 375px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+.mybutton{
+  height: 50px;
+  width: 60px;
+  background-color:rgb(126,128,126);
+  color: rgb(0,0,0);
+  font-size: 20px;
+    border-radius: 15px;  
+  border-bottom-color: rgb(126,128,126); 
+    border-left-color: rgb(126,128,126);
+    border-right-color: rgb(126,128,126);
+    border-top-color:  rgb(126,128,126);
+     border-top-width: 5px;
+   border-left-width: 4px;
+    border-bottom-width: 5px;
+    border-right-width: 4px;
+
+}
+
+.screen{
+  height: 60px;
+  width: 317px;
+  background-color: rgb(132,152,137);
+  font-size: 35px;
+  border-color: #0ff3;
+  border-radius: 15px;
+  color: black;
+  text-align: center;
+   border-bottom-color:  rgb(100,100,100);
+    border-left-color:  rgb(100,100,100);
+    border-right-color:  rgb(100,100,100);
+    border-top-color:  rgb(100,100,100);  
+     border-top-width: 6px;
+    border-left-width: 6px;
+    border-bottom-width: 6px;
+    border-right-width: 6px;
+
+}
+.on{
+height: 65px;
+  width: 65px;
+  background-color: black;
+  color:  yellow;
+  font-size: 17px;
+  border-top-width: 5px; 
+  border-radius: 35px;
+  border-bottom-color:  black; 
+    border-left-color: black; 
+    border-right-color: black;
+    border-top-color:  black;
+    border-left-width: 4px;
+    border-bottom-width: 5px;
+    border-right-width: 4px;
+}
+.off{
+
+height: 65px;
+  width: 65px;
+  background-color: black;
+  color:red;
+  font-size: 17px;
+  border-radius: 35px;
+   border-bottom-color:  black; 
+    border-left-color: black; 
+    border-right-color: black;
+    border-top-color:  black;
+    border-left-width: 4px;
+    border-bottom-width: 5px;
+    border-right-width: 4px;
+  }
+.a{
+
+height: 35px;
+  width: 60px;
+  background-color:black;
+  color:  rgb(176,176,176);
+  font-size: 15px;
+  border-radius: 25px;  
+  border-bottom-color:  black; 
+    border-left-color: black; 
+    border-right-color: black;
+    border-top-color:  black;
+      border-top-width: 5px;
+   border-left-width: 4px;
+    border-bottom-width: 5px;
+    border-right-width: 4px;
+   
+}
+.title{
+  font-size: 30px;
+  color:  rgb(176,176,176);
+  font-style: italic;
+}
+.mbutton{
+  height: 50px;
+width: 60px;
+  background-color: rgb(0,101,101);
+  color: rgb(176,176,176);
+  font-size: 20px;
+    border-radius: 15px;  
+  border-bottom-color:rgb(0,101,101);
+    border-left-color: rgb(0,101,101);
+    border-right-color: rgb(0,101,101);
+    border-top-color:rgb(0,101,101);  
+    border-top-width: 5px;
+   border-left-width: 4px;
+    border-bottom-width: 5px;
+    border-right-width: 4px;
+
+}
+.aa{
+  font-size: 15px;
+  font-style: italic;
+}
